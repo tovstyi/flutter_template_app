@@ -6,7 +6,7 @@ import '../../features/template_app/presentation/screens/home_page.dart';
 import '../../injection_container.dart';
 import '../bloc/session_bloc.dart';
 
-class Route {
+class PageRoutes {
   static Map<String, Widget Function(BuildContext)> routes = {
     'home_page': (context) => BlocProvider.value(
         value: sl<SessionBloc>(),
