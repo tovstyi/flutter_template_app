@@ -1,0 +1,83 @@
+name: template_app
+description: app description
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.5
+  flutter_bloc: ^8.1.1
+  equatable: ^2.0.5
+  dartz: ^0.10.1
+  http: ^0.13.5
+  shared_preferences: ^2.0.17
+  data_connection_checker: ^0.3.4
+  get_it: ^7.2.0
+  dio: ^4.0.6
+  get: ^4.6.5
+  skeletons: ^0.0.3
+  flutter_native_splash: ^2.2.17
+  page_transition: ^2.0.9
+
+  # Read for more information
+  # https://pub.dev/packages/google_fonts
+  google_fonts: ^3.0.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.1
+
+# change logo, background images
+# and so on for splash screen
+flutter_native_splash:
+  color: "#ffffff"
+#  image: assets/logo/logo.png
+  android_12:
+    color: "#ffffff"
+#    image: assets/logo/logo.png
+  fullscreen: true
+  ios: true
+  android: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/fonts/
+    - assets/images/
+    - assets/logo/
+    - assets/videos/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
